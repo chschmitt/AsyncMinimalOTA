@@ -1,7 +1,7 @@
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include <AsyncElegantOTA.h>
+#include <AsyncMinimalOTA.h>
 
 const char* ssid = "........";
 const char* password = "........";
@@ -30,11 +30,11 @@ void setup(void) {
     request->send(200, "text/plain", "Hi! I am ESP32.");
   });
 
-  AsyncElegantOTA.begin(&server);    // Start ElegantOTA
+  AsyncMinimalOTA.begin(&server);    // Start MinimalOTA
   server.begin();
   Serial.println("HTTP server started");
 }
 
 void loop(void) {
-  AsyncElegantOTA.loop();
+  AsyncMinimalOTA.loop();
 }

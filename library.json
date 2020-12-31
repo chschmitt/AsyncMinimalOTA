@@ -1,21 +1,25 @@
 {
-  "name": "AsyncElegantOTA",
-  "keywords": "AsyncElegantOTA, OTA, Update, ESP8266, ESP32, Over, the, air",
-  "description": "Perform OTAs for ESP8266 & ESP32 Asynchronously.",
+  "name": "AsyncMinimalOTA",
+  "keywords": "AsyncMinimalOTA, OTA, Update, ESP8266, ESP32, Over, the, air",
+  "description": "Perform OTA updates for ESP8266 and ESP32 with ESPAsyncWebServer. Fork of AsyncElegentOTA by Ayush Sharma with the Vue.js frontend removed (https://github.com/ayushsharma82/AsyncElegantOTA).",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/ayushsharma82/AsyncElegantOTA.git"
+    "url": "https://github.com/chschmitt/AsyncMinimalOTA.git"
   },
   "authors":
   [
     {
-      "name": "Ayush Sharma",
-      "email": "asrocks5@gmail.com",
+      "name": "Christoph Schmitt",
+      "email": "dev@chschmitt.de",
       "maintainer": true
+    },
+    {
+      "name": "Ayush Sharma",
+      "email": "asrocks5@gmail.com"
     }
   ],
-  "version": "2.2.5",
+  "version": "0.1.0",
   "frameworks": "arduino",
   "platforms": "espressif"
 }

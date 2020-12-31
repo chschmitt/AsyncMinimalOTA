@@ -1,5 +1,6 @@
 .vscode
-elegant-webpage/
+__pycache__
+auth_*.sh
 
 # Prerequisites
 *.d

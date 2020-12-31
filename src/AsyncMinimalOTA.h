@@ -1,5 +1,5 @@
-#ifndef AsyncElegantOTA_h
-#define AsyncElegantOTA_h
+#ifndef AsyncMinimalOTA_h
+#define AsyncMinimalOTA_h
 
 #include "Arduino.h"
 #include "stdlib_noniso.h"
@@ -21,10 +21,10 @@
 #include "ESPAsyncWebServer.h"
 #include "FS.h"
 
-#include "elegantWebpage.h"
+#include "AsyncMinimalOTAPage.h"
 
 
-class AsyncElegantOtaClass{
+class AsyncMinimalOTAClass {
 
     public:
 
@@ -64,7 +64,7 @@ class AsyncElegantOtaClass{
                         return request->requestAuthentication();
                     }
                 }
-                AsyncWebServerResponse *response = request->beginResponse_P(200, "text/html", ELEGANT_HTML, ELEGANT_HTML_SIZE);
+                AsyncWebServerResponse *response = request->beginResponse_P(200, "text/html", MINIMAL_HTML, MINIMAL_HTML_SIZE);
                 response->addHeader("Content-Encoding", "gzip");
                 request->send(response);
             });
@@ -170,5 +170,5 @@ class AsyncElegantOtaClass{
 
 };
 
-AsyncElegantOtaClass AsyncElegantOTA;
+AsyncMinimalOTAClass AsyncMinimalOTA;
 #endif
